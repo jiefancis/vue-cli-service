@@ -7,12 +7,15 @@
     "@vuecliservice": "./bin/_vue-cli-service.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "env": "node demo/env.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "dotenv": "^16.0.1",
+    "dotenv-expand": "^8.0.3",
     "webpack": "^5.72.1",
     "webpack-dev-server": "^4.9.0"
   }

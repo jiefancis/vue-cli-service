@@ -1,0 +1,5 @@
+const dotenv = require('dotenv')
+const dotenvExpand = require('dotenv-expand')
+const env = dotenv.config({path: './demo/.env'})
+dotenvExpand.expand(env)
+console.log('config---', process.env.DEMO_APP)

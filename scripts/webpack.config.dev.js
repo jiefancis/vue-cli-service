@@ -5,5 +5,11 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'static/js/[name].[contenthash:8].js',
         publicPath: ''
-    }
+    },
+    devServer: {
+        
+    },
+    plugins: [
+        new HtmlWebpackPlugin()
+    ]
 }
