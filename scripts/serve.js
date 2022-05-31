@@ -1,6 +1,5 @@
 const Webpack = require('webpack')
 const WebpackDevServer = require('webpack-dev-server')
-// const webpackConfig = require('./webpack.config.dev.js')
 
 // 注册serve指令，run运行时执行webpack-dev-server启动本地服务
 module.exports = (api, options) => {

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "env": "node demo/env.js"
+    "env": "node demo/env.js --mode dev"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,10 @@
     "dotenv": "^16.0.1",
     "dotenv-expand": "^8.0.3",
     "webpack": "^5.72.1",
+    "webpack-chain": "^6.5.1",
     "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
