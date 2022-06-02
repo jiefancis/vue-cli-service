@@ -1,0 +1,7 @@
+const dotenv = require('dotenv')
+const dotenvExpand = require('dotenv-expand')
+const env = dotenv.config({path: './demo/.env'})
+dotenvExpand.expand(env)
+const Config = require('webpack-chain')
+const config = new Config()
+console.log('config---', config.toConfig())
