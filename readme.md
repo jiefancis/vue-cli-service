@@ -15,7 +15,10 @@ vue-cli-service内部使用**webpack-chain**封装了默认的webpack配置，�
 有vue开发经验的人在启动项目时，几乎都遇见过这些类型的异常：'vue-cli-service 不是可执行程序' 'xxx not found the module'等。在node_modules中的依赖包有：可执行程序和模块两种类型，npm install xxx如果下载的是一个可执行程序，npm会在包下载完成后，在node_modules/.bin目录中注册一个脚本文件，这个文件有三种格式：vue-cli-service、vue-cli-service.cmd、vue-cli-service.ps1，分别代表项目运行在unix环境、cmd命令行终端、powershell终端。文件中有node指令：node xxx-cli.js args，所以npm run serve接收到 vue-cli-service serve 的指令，会去node_modules/.bin目录下找到对应的vue-cli-service脚本执行脚本内部的脚本：node vue-cli-service.js
 
 
+## 问题总结
+1. node包中有依赖包，如何让
 ## vue-cli-service的实现 
+
 ### 功能点
 1. webpack与webpack-dev-server的node api实现项目启动和打包
 2. webpack-chain生成配置，优先给以用户自定义配置为主，没有的配置取默认配置

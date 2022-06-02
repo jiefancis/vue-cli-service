@@ -10,7 +10,7 @@ module.exports = (api, options) => {
         const devOptions = {...webpackConfig.devServer, open: true }
         const server = WebpackDevServer(compiler, devOptions)
         server.startCallback(() => {
-            console.log('启动')
+            console.log('成功启动')
         })
     })
 }

@@ -1,25 +1,21 @@
 {
-  "name": "vuecliservice",
+  "name": "example",
   "version": "1.0.0",
   "description": "",
-  "main": "bin/_vue-cli-service.js",
-  "bin": {
-    "vuecliservice": "bin/_vue-cli-service.js"
-  },
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "env": "node demo/env.js --mode dev"
+    "dev": "vuecliservice serve",
+    "start": "node node_modules/@vuecliservice/bin/vue-cli-service.js serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "commander": "^9.3.0",
     "dotenv": "^16.0.1",
     "dotenv-expand": "^8.0.3",
-    "webpack": "^5.72.1",
-    "webpack-chain": "^6.5.1",
-    "webpack-dev-server": "^4.9.0"
+    "html-webpack-plugin": "^5.5.0",
+    "lodash": "^4.17.21"
   },
   "dependencies": {
     "lodash": "^4.17.21"
