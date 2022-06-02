@@ -1,0 +1,8 @@
+[0602/145354.783:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: 管道已结束。 (0x6D)
+[0602/145354.785:ERROR:file_io_win.cc(180)] CreateFile C:\Program Files\chrome\Data\Crashpad\settings.dat: 拒绝访问。 (0x5)
+[0602/145526.190:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: 管道已结束。 (0x6D)
+[0602/145526.192:ERROR:file_io_win.cc(180)] CreateFile C:\Program Files\chrome\Data\Crashpad\settings.dat: 拒绝访问。 (0x5)
+[0602/145617.866:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: 管道已结束。 (0x6D)
+[0602/145617.868:ERROR:file_io_win.cc(180)] CreateFile C:\Program Files\chrome\Data\Crashpad\settings.dat: 拒绝访问。 (0x5)
+[0602/145649.275:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: 管道已结束。 (0x6D)
+[0602/145649.277:ERROR:file_io_win.cc(180)] CreateFile C:\Program Files\chrome\Data\Crashpad\settings.dat: 拒绝访问。 (0x5)
