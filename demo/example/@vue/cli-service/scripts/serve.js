@@ -3,7 +3,7 @@ const WebpackDevServer = require('webpack-dev-server')
 
 // 注册serve指令，run运行时执行webpack-dev-server启动本地服务
 module.exports = (api, options) => {
-    api.registerCommand('serve', function() {
+    api.registerCommand('serve', function serve (){
         const webpackConfig = api.resolveWebpackConfig()
         const compiler = Webpack(webpackConfig)
 

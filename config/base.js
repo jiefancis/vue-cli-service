@@ -2,19 +2,22 @@
  * 通过api向service.chainWebpackFns推入默认配置，提供在new Service初始化过程中生成webpack配置
  * webpackConfig是 webpack-chain的实例
  */
+ const path = require('path')
  const HtmlWbpackPlugin = require('html-webpack-plugin')
 
- module.exports = (api, webpackConfig) => {
-     api.chainWebpack(() => {
+ module.exports = (api, options) => {
+     console.log('config/base', options.outputDir)
+     api.chainWebpack((webpackConfig) => {
          webpackConfig
+                 .mode('development')
                  .context(api.service.context)
                  .entry('app')
-                     .add('src/main.js')
+                     .add('./src/main.js')
                      .end()
                  .output
-                     .path('dist')
+                     .path(path.resolve(api.service.context, options.outputDir))
                      .filename('[name].[contenthash:8].js')
-                     .end()
+
          webpackConfig.resolve
              .extensions
                  .merge(['.js', '.jsx', '.vue', '.json', '.wasm'])
